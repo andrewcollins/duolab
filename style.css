@@ -1,0 +1,190 @@
+@import url(http://fonts.googleapis.com/css?family=Signika+Negative:400,600|Open+Sans:400italic,400,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'duolab-ico';
+  src: url("fonts/duolab-ico.eot");
+  src: url("fonts/duolab-ico.eot?#iefix") format("embedded-opentype"), url("fonts/duolab-ico.ttf") format("truetype"), url("fonts/duolab-ico.woff") format("woff"), url("fonts/duolab-ico.svg#duolab-ico") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon {
+  font-family: 'duolab-ico';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.68;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon.twitter:before {
+  content: "\74"; }
+
+.icon.instagram:before {
+  content: "\69"; }
+
+.icon.github:before {
+  content: "\67"; }
+
+.icon.flickr:before {
+  content: "\66"; }
+
+.icon.email:before {
+  content: "\6d"; }
+
+.iconemail2:before {
+  content: "\61"; }
+
+.icon.dribbble:before {
+  content: "\64"; }
+
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 570px;
+  width: 100%;
+  font: normal 1em/1 'helvetica neue','Open Sans','helvetica neue',helvetica,arial,sans-serif; }
+
+.page {
+  height: 100%;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  background-color: #fffbfa; }
+
+.headline {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-flex: 5;
+  flex: 5;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .headline h1 {
+    margin: 0;
+    padding: 0;
+    font: bold 16em/.9 'Signika Negative','helvetica neue',helvetica,arial,sans-serif;
+    color: #333; }
+  .headline p {
+    margin: 24px 0 0 0;
+    font-size: 1.8em;
+    color: #AE3E4C; }
+
+.links {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-flex: 3;
+  flex: 3;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+.icon {
+  color: #fff;
+  height: 80px;
+  width: 80px;
+  margin: 16px auto;
+  border-radius: 40px;
+  background-color: #F5A8B0;
+  text-decoration: none;
+  font-size: 3em;
+  text-align: center; }
+
+.icon:before {
+  margin-top: 42px; }
+
+a.icon {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.05s ease-in-out;
+  -moz-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out; }
+
+a.icon:hover {
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
+  transform: rotate(12deg);
+  -webkit-transition: all 0.05s ease-in-out;
+  -moz-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out; }
+
+.twitter {
+  background-color: #8A7B8C; }
+
+.instagram {
+  background-color: #8A8E9E; }
+
+.github {
+  background-color: #98A3A6; }
+
+.flickr {
+  background-color: #B3B2AA; }
+
+.email {
+  background-color: #D9BAAD; }

@@ -1,0 +1,107 @@
+@import url(http://fonts.googleapis.com/css?family=Signika+Negative:400,600|Open+Sans:400italic,400,700);
+@import "reset";
+@import "icon-font";
+@import "bourbon";
+
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 570px;
+    width: 100%;
+    font: normal 1em/1 'helvetica neue','Open Sans','helvetica neue',helvetica,arial,sans-serif;
+}
+.page {
+    height: 100%;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    background-color: #fffbfa;
+}
+.headline {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-flex: 5;
+    flex: 5;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    h1 {
+        margin: 0;
+        padding: 0;
+        font: bold 16em/.9 'Signika Negative','helvetica neue',helvetica,arial,sans-serif;
+        color: #333;
+    }
+    p {
+        margin: 24px 0 0 0;
+        font-size: 1.8em;
+        color: #AE3E4C;
+    }
+}
+.links {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-flex: 3;
+    flex: 3;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.icon {
+    color: #fff;
+    height: 80px;
+    width: 80px;
+    margin: 16px auto;
+    border-radius: 40px;
+    background-color: #F5A8B0;
+    text-decoration: none;
+    font-size: 3em;
+    text-align: center;
+}
+.icon:before {
+    margin-top: 42px;
+}
+
+// ANIMATION
+a.icon {
+    @include transform(rotate(0deg));
+    @include transition (all 0.05s ease-in-out);
+}
+a.icon:hover {
+    @include transform(rotate(12deg));
+    @include transition (all 0.05s ease-in-out);
+    //background-color: #AE3E4C;
+}
+
+// PER-ICON COLORS
+.twitter {
+    background-color: #8A7B8C;
+}
+.instagram {
+    background-color: #8A8E9E;
+    }
+.github {
+    background-color: #98A3A6;
+}
+.flickr {
+    background-color: #B3B2AA;
+}
+.email {
+    background-color: #D9BAAD;
+}

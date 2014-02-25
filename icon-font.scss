@@ -1,0 +1,46 @@
+@font-face {
+	font-family: 'duolab-ico';
+	src:url('fonts/duolab-ico.eot');
+	src:url('fonts/duolab-ico.eot?#iefix') format('embedded-opentype'),
+		url('fonts/duolab-ico.ttf') format('truetype'),
+		url('fonts/duolab-ico.woff') format('woff'),
+		url('fonts/duolab-ico.svg#duolab-ico') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon {
+	font-family: 'duolab-ico';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1.68;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon.twitter:before {
+	content: "\74";
+}
+.icon.instagram:before {
+	content: "\69";
+}
+.icon.github:before {
+	content: "\67";
+}
+.icon.flickr:before {
+	content: "\66";
+}
+.icon.email:before {
+	content: "\6d";
+}
+.iconemail2:before {
+	content: "\61";
+}
+.icon.dribbble:before {
+	content: "\64";
+}
