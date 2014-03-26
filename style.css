@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Signika+Negative:400,600|Open+Sans:400italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,7 +48,6 @@ table {
   src: url("fonts/duolab-ico.eot?#iefix") format("embedded-opentype"), url("fonts/duolab-ico.ttf") format("truetype"), url("fonts/duolab-ico.woff") format("woff"), url("fonts/duolab-ico.svg#duolab-ico") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .icon {
   font-family: 'duolab-ico';
   speak: none;
@@ -92,7 +91,7 @@ body {
   height: 100%;
   min-height: 570px;
   width: 100%;
-  font: normal 1em/1 'helvetica neue','Open Sans','helvetica neue',helvetica,arial,sans-serif; }
+  font: normal 1em/1 'helvetica neue','Open Sans',helvetica,arial,sans-serif; }
 
 .page {
   height: 100%;
@@ -102,31 +101,12 @@ body {
   -webkit-flex-direction: row;
   flex-direction: row;
   background-color: #fffbfa; }
+  @media (max-width: 720px) {
+    .page {
+      -webkit-flex-direction: column;
+      flex-direction: column; } }
 
 .headline {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  -webkit-flex: 5;
-  flex: 5;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center; }
-  .headline h1 {
-    margin: 0;
-    padding: 0;
-    font: bold 16em/.9 'Signika Negative','helvetica neue',helvetica,arial,sans-serif;
-    color: #333; }
-  .headline p {
-    margin: 24px 0 0 0;
-    font-size: 1.8em;
-    color: #AE3E4C; }
-
-.links {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: column nowrap;
@@ -136,15 +116,42 @@ body {
   -webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center; }
+  justify-content: center; }
+  .headline h1 {
+    margin: 0;
+    padding: 0;
+    font: 800 6em/.9 'Open Sans','helvetica neue',helvetica,arial,sans-serif;
+    color: #222; }
+  .headline p {
+    margin: 24px 0 0 0;
+    font-size: 1.6em;
+    color: #8A7B8C; }
+
+.links {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  @media (max-width: 720px) {
+    .links {
+      -webkit-flex: 2;
+      flex: 2;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap; } }
 
 .icon {
   color: #fff;
   height: 80px;
   width: 80px;
-  margin: 16px auto;
+  min-height: 80px;
+  min-width: 80px;
+  margin: 16px 8px;
   border-radius: 40px;
   background-color: #F5A8B0;
   text-decoration: none;

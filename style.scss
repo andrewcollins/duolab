@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Signika+Negative:400,600|Open+Sans:400italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800);
 @import "reset";
 @import "icon-font";
 @import "bourbon";
@@ -13,7 +13,7 @@ body {
     height: 100%;
     min-height: 570px;
     width: 100%;
-    font: normal 1em/1 'helvetica neue','Open Sans','helvetica neue',helvetica,arial,sans-serif;
+    font: normal 1em/1 'helvetica neue','Open Sans',helvetica,arial,sans-serif;
 }
 .page {
     height: 100%;
@@ -23,33 +23,12 @@ body {
     -webkit-flex-direction: row;
     flex-direction: row;
     background-color: #fffbfa;
+    @media (max-width: 720px) {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
 }
 .headline {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    -webkit-flex: 5;
-    flex: 5;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
-    h1 {
-        margin: 0;
-        padding: 0;
-        font: bold 16em/.9 'Signika Negative','helvetica neue',helvetica,arial,sans-serif;
-        color: #333;
-    }
-    p {
-        margin: 24px 0 0 0;
-        font-size: 1.8em;
-        color: #AE3E4C;
-    }
-}
-.links {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: column nowrap;
@@ -60,14 +39,43 @@ body {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
+    h1 {
+        margin: 0;
+        padding: 0;
+        font: 800 6em/.9 'Open Sans','helvetica neue',helvetica,arial,sans-serif;
+        color: #222;
+    }
+    p {
+        margin: 24px 0 0 0;
+        font-size: 1.6em;
+        color: #8A7B8C;
+    }
+}
+.links {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: center;
+    justify-content: center;
+    @media (max-width: 720px) {
+        -webkit-flex: 2;
+        flex: 2;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    }
 }
 .icon {
     color: #fff;
     height: 80px;
     width: 80px;
-    margin: 16px auto;
+    min-height: 80px;
+    min-width: 80px;
+    margin: 16px 8px;
     border-radius: 40px;
     background-color: #F5A8B0;
     text-decoration: none;
@@ -86,7 +94,6 @@ a.icon {
 a.icon:hover {
     @include transform(rotate(12deg));
     @include transition (all 0.05s ease-in-out);
-    //background-color: #AE3E4C;
 }
 
 // PER-ICON COLORS
