@@ -91,7 +91,7 @@ body {
   height: 100%;
   min-height: 570px;
   width: 100%;
-  font: normal 1em/1 'helvetica neue','Open Sans',helvetica,arial,sans-serif; }
+  font: normal 1em/1 'Open Sans','helvetica neue',helvetica,arial,sans-serif; }
 
 .page {
   height: 100%;
@@ -120,7 +120,9 @@ body {
   .headline h1 {
     margin: 0;
     padding: 0;
-    font: 800 6em/.9 'Open Sans','helvetica neue',helvetica,arial,sans-serif;
+    font-weight: 800;
+    font-size: 6em;
+    line-height: .9;
     color: #222; }
   .headline p {
     margin: 24px 0 0 0;
