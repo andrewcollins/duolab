@@ -134,6 +134,9 @@ body {
     font-size: 6em;
     line-height: .9;
     color: #222; }
+    @media (max-width: 720px) {
+      .headline h1 {
+        font-size: 4em; } }
   .headline p {
     margin: 24px 0 0 0;
     font-size: 1.6em;
@@ -159,8 +162,8 @@ body {
       -webkit-box-flex: 2;
           -ms-flex: 2;
               flex: 2;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap; } }
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; } }
 
 .icon {
   color: #fff;
@@ -174,9 +177,20 @@ body {
   text-decoration: none;
   font-size: 3em;
   text-align: center; }
+  @media (max-width: 720px) {
+    .icon {
+      font-size: 2.3em;
+      height: 60px;
+      width: 60px;
+      border-radius: 30px;
+      min-height: 60px;
+      min-width: 60px;
+      margin: 6px 6px 0 6px; } }
 
-.icon:before {
-  margin-top: 42px; }
+@media (max-width: 720px) {
+  .icon:before {
+    position: relative;
+    top: -1px; } }
 
 a.icon {
   -webkit-transform: rotate(0deg);
